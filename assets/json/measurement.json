@@ -1,0 +1,138 @@
+{
+  "temperature": {
+    "Celsius": 1,
+    "Fahrenheit": -17.22222,
+    "Kelvin": -272.15
+  },
+  "angle": {
+    "Degrees": 1,
+    "Radians": 57.29578,
+    "Gradians": 0.9
+  },
+  "speed": {
+    "Centimeters per second": 1,
+    "Meters per second": 100,
+    "Kilometers perhour": 27.77778,
+    "Feet per second": 30.48,
+    "Miles per hour": 44.7,
+    "Knots": 51.44,
+    "Mach": 34030
+  },
+  "pressure": {
+    "Atmospheres": 1,
+    "Bars": 0.986923,
+    "Kilopascals": 0.00986923,
+    "Millimeters of mercury": 0.00131557,
+    "Pascals": 0.00000986923,
+    "Pounds per square inch": 0.068046
+  },
+  "energy": {
+    "Electron volts": 1,
+    "Joules": 6.241509e+18,
+    "Kilojoules": 6.241509e+21,
+    "Thermal calories": 2.611448e+19,
+    "Food calories": 2.611448e+22,
+    "Foot-pounds": 8.462350e+18,
+    "British thermal units": 6.585142e+21
+  },
+  "mass": {
+    "Carats": 1,
+    "Milligrams": 0.005,
+    "Centigrams": 0.05,
+    "Decigrams": 0.5,
+    "Grams": 5,
+    "Dekagrams": 50,
+    "Hectograms": 500,
+    "Kilograms": 5000,
+    "Metric tonnes": 5000000,
+    "Ounces": 141.7476,
+    "Pounds": 2267.962,
+    "Stone": 31751.47,
+    "Short tons (US)": 4535924,
+    "Long tons (UK)": 5080235
+  },
+  "length": {
+    "Nanometers": 1,
+    "Microns": 1000,
+    "Millimeters": 1000000,
+    "Centimeters": 10000000,
+    "Meters": 1000000000,
+    "Kilometers": 1000000000000,
+    "Inches": 25400000,
+    "Feet": 304800000,
+    "Yards": 914400000,
+    "Miles": 1609344000000,
+    "Nautical Miles": 1852000000000
+  },
+  "time": {
+    "Microseconds": 1,
+    "Milliseconds": 1000,
+    "Seconds": 1000000,
+    "Minutes": 60000000,
+    "Hours": 3600000000,
+    "Days": 86400000000,
+    "Weeks": 604800000000,
+    "Years": 31557600000000
+  },
+  "data": {
+    "Bits": 1,
+    "Bytes": 8,
+    "Kilobits": 1000,
+    "Kilobytes": 8000,
+    "Megabits": 1000000,
+    "Megabytes": 8000000,
+    "Gigabits": 1000000000,
+    "Gigabytes": 8000000000,
+    "Terabits": 1000000000000,
+    "Terabytes": 8000000000000,
+    "Petabits": 1.000000e+15,
+    "Petabytes": 8.000000e+15,
+    "Exabits": 1.000000e+18,
+    "Exabytes": 8.000000e+18,
+    "Zetabits": 1.000000e+21,
+    "Zetabytes": 8.000000e+21,
+    "Yottabits": 1.000000e+24,
+    "Yottabytes": 8.000000e+24
+  },
+  "volume": {
+    "Milliliters": 1,
+    "Cubic centimeters": 1,
+    "Liters": 1000,
+    "Cubic meters": 1000000,
+    "Teaspoons (US)": 4.928922,
+    "Tablespoons (US)": 14.78676,
+    "Fluid ounces (US)": 29.57353,
+    "Cups (US)": 236.5882,
+    "Pints (US)": 473.1765,
+    "Quarts (US)": 946.3529,
+    "Gallons (US)": 3785.412,
+    "Cubic inches": 16.38706,
+    "Cubic feet": 28316.85,
+    "Cubic yards": 764554.9,
+    "Teaspoons (UK)": 5.919388,
+    "Tablespoons (UK)": 17.75816,
+    "Fluid ounces (UK)": 28.41306,
+    "Pints (UK)": 568.2613,
+    "Quarts (UK)": 1136.523,
+    "Gallons (UK)": 4546.09
+  },
+  "power": {
+    "Watts": 1,
+    "Kilowatts": 1000,
+    "Horsepower (US)": 745.6999,
+    "Food-pounds/minute": 0.022597,
+    "BTUs/minute": 17.58427
+  },
+  "area": {
+    "Square millimeters": 1,
+    "Square centimeters": 100,
+    "Square meters": 1000000,
+    "Hectares": 10000000000,
+    "Square kilometers": 1000000000000,
+    "Square inches": 645.16,
+    "Square feet": 92903.04,
+    "Square yards": 836127.4,
+    "Acres": 4046856422,
+    "Square miles": 2589988110336
+  }
+}

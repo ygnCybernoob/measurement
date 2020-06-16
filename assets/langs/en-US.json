@@ -1,0 +1,32 @@
+{
+  "app": {
+    "title": "Measurement"
+  },
+  "home": {
+    "energy": "Energy",
+    "volume": "Volume",
+    "angle": "Angle",
+    "data": "Data",
+    "power": "Power",
+    "pressure": "Pressure",
+    "speed": "Speed",
+    "time": "Time",
+    "temperature": "Temperature",
+    "length": "Length",
+    "mass": "Weight & Mass",
+    "area": "Area"
+  },
+  "menu": {
+    "history": "History",
+    "about": "About"
+  },
+  "history": {
+    "no_hist": "No History!",
+    "clear_hist": "Clear History"
+  },
+  "about": {
+    "desp": "To convert simply and easily the (12) kinds of measurements",
+    "close": "Close"
+  }
+}
+
