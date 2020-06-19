@@ -6,6 +6,7 @@ import 'package:measurement/model/measurement.dart';
 
 class ConverterNotifier extends ChangeNotifier {
   final List<MeasurementModel> modelList = [];
+  final bool _isTemperature;
 
   format(num n) => n == n.truncate() ? n.truncate() : n;
 
@@ -37,7 +38,8 @@ class ConverterNotifier extends ChangeNotifier {
     notifyListeners();
   }
 
-  ConverterNotifier(String path) {
+  ConverterNotifier(String path)
+      : _isTemperature = path.toLowerCase() == 'temperature' {
     retrieveData(path);
   }
 
@@ -52,13 +54,41 @@ class ConverterNotifier extends ChangeNotifier {
     model2 = modelList[0];
   }
 
+  double _calculateTemp(double value, MeasurementModel from, MeasurementModel to) {
+    if (from.unit == 'Celsius') {
+      switch (to.unit) {
+        case 'Fahrenheit':
+          return 9 / 5 * value + 32;
+        case 'Kelvin':
+          return value + 273;
+      }
+    } else if (from.unit == 'Fahrenheit') {
+      switch (to.unit) {
+        case 'Celsius':
+          return 5 / 9 * (value - 32);
+        case 'Kelvin':
+          return 5 / 9 * (value - 32) + 273;
+      }
+    } else if (from.unit == 'Kelvin') {
+      switch (to.unit) {
+        case 'Celsius':
+          return value - 273;
+        case 'Fahrenheit':
+          return 9 / 5 * (value - 273) + 32;
+      }
+    }
+    return 0;
+  }
+
   void convertV1ToV2(double value) {
     _value1 = value;
 
     if (model1.unit == model2.unit) {
       _value2 = _value1;
     } else {
-      _value2 = _value1 / model2.value * model1.value;
+      _value2 = _isTemperature
+          ? _calculateTemp(value, model1, model2)
+          : _value1 / model2.value * model1.value;
     }
 
     notifyListeners();
@@ -70,7 +100,9 @@ class ConverterNotifier extends ChangeNotifier {
     if (model1.unit == model2.unit) {
       _value1 = _value2;
     } else {
-      _value1 = _value2 / model1.value * model2.value;
+      _value1 = _isTemperature
+          ? _calculateTemp(value, model2, model1)
+          : _value2 / model1.value * model2.value;
     }
 
     notifyListeners();

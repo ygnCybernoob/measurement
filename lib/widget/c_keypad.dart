@@ -171,8 +171,10 @@ class KeyPadController {
       case KeyType.delete:
         if (text.length == 1) {
           text = '0';
-        } else if (text.contains('-') && text.length == 2) {
+        } else if (text.contains('-0')) {
           text = '0';
+        } else if (text.contains('-') && text.length == 2) {
+          text = '-0';
         } else {
           text = text.substring(0, text.length - 1);
         }

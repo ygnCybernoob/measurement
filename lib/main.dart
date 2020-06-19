@@ -57,6 +57,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.green,
         primarySwatch: Colors.green,
       ),
+//      debugShowCheckedModeBanner: false,
     );
   }
 }
